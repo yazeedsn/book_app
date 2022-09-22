@@ -1,4 +1,4 @@
-import 'package:books/Screens/password_screen.dart';
+import 'package:books/Screens/auth/password_screen.dart';
 import 'package:books/fast_navigation.dart';
 import 'package:books/styling.dart';
 import 'package:flutter/material.dart';

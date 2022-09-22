@@ -1,4 +1,4 @@
-import 'package:books/Screens/welcome_screen.dart';
+import 'package:books/Screens/auth/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:intro_slider/intro_slider.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

@@ -1,5 +1,5 @@
-import 'package:books/Screens/login_screen.dart';
-import 'package:books/Screens/signup_screen.dart';
+import 'package:books/Screens/auth/login_screen.dart';
+import 'package:books/Screens/auth/signup_screen.dart';
 import 'package:books/styling.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
