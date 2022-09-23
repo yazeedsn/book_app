@@ -36,8 +36,9 @@ var outlinedButtonStyle = ButtonStyle(
   textStyle: MaterialStateProperty.all<TextStyle>(outlinedButtonTextStyle),
   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
     RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(50.r),
-        side: const BorderSide(color: color2, width: 2)),
+      borderRadius: BorderRadius.circular(50.r),
+      side: const BorderSide(color: color2, width: 2),
+    ),
   ),
   minimumSize: MaterialStateProperty.all<Size>(Size(64.w, 48.h)),
 );

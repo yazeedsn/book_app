@@ -1,4 +1,4 @@
-import 'package:books/Screens/settings_screen.dart';
+import 'package:books/Screens/about_us.dart';
 import 'package:books/styling.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -10,7 +10,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -23,7 +22,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         debugShowCheckedModeBanner: false,
-        home: const SettingScreen(),
+        home: const ContactUs(),
       ),
     );
   }
