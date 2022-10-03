@@ -10,6 +10,12 @@ var noramlTextStyle = TextStyle(
   fontWeight: FontWeight.normal,
 );
 
+var pageTitleTextStyle = TextStyle(
+    color: const Color(0xFF323232),
+    fontSize: 30.sp,
+    fontFamily: 'Segoe-UI',
+    fontWeight: FontWeight.normal);
+
 var buttonTextStyle = TextStyle(
   color: color2,
   fontFamily: 'Al-Jazeera',

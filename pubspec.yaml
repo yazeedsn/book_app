@@ -11,8 +11,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   flutter_svg: ^1.1.5
-  intro_slider: ^3.0.10
   flutter_screenutil: ^5.5.4
+  smooth_page_indicator: ^1.0.0+2
 
 dev_dependencies:
   flutter_test:
@@ -28,7 +28,11 @@ flutter:
     - family: Al-Jazeera
       fonts:
         - asset: assets/fonts/Al-Jazeera-Arabic-Regular.ttf
-
+   
+    - family: Segoe-UI
+      fonts:
+        - asset: assets/fonts/Segoe-UI.ttf
+   
     - family: Kufi
       fonts:
         - asset: assets/fonts/Droid-Arabic-Kufi.ttf

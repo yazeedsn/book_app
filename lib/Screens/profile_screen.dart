@@ -18,10 +18,8 @@ class ProfileScreen extends StatelessWidget {
               padding: EdgeInsets.only(left: 20.w, right: 20.w, top: 12.h),
               child: Text(
                 'الملف الشخصي',
-                style: TextStyle(
-                  color: const Color(0xFF434343),
-                  fontSize: 30.sp,
-                ),
+                style:
+                    pageTitleTextStyle.copyWith(color: const Color(0xFF434343)),
               ),
             ),
             const Divider(),

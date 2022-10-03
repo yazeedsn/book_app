@@ -18,10 +18,14 @@ class WelcomeScreen extends StatelessWidget {
           Column(
             children: [
               Expanded(
-                flex: 6,
-                child: SvgPicture.asset(
-                  'assets/images/welcome_bg.svg',
-                  fit: BoxFit.cover,
+                flex: 3,
+                child: Transform.scale(
+                  scale: 1.5,
+                  child: SvgPicture.asset(
+                    'assets/images/welcome_bg.svg',
+                    fit: BoxFit.cover,
+                    alignment: Alignment.bottomCenter,
+                  ),
                 ),
               ),
               const Expanded(
@@ -63,6 +67,7 @@ class WelcomeScreen extends StatelessWidget {
                     },
                     child: Text('تسجيل الدخول', style: outlinedButtonTextStyle),
                   ),
+                  SizedBox(height: 6.h),
                   OutlinedButton(
                     onPressed: () {
                       Navigator.push(

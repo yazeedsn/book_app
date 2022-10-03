@@ -1,6 +1,7 @@
-import 'package:books/components/book_slide.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:books/components/book_slide.dart';
+import 'package:books/styling.dart';
 
 class FeaturedScreen extends StatelessWidget {
   const FeaturedScreen({Key? key}) : super(key: key);
@@ -16,10 +17,8 @@ class FeaturedScreen extends StatelessWidget {
           children: [
             Text(
               'الكتب المميزة',
-              style: TextStyle(
-                color: const Color(0xFF434343),
-                fontSize: 30.sp,
-              ),
+              style:
+                  pageTitleTextStyle.copyWith(color: const Color(0xFF434343)),
             ),
             SizedBox(height: 70.h),
             Expanded(

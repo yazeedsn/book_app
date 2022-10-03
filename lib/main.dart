@@ -1,4 +1,4 @@
-import 'package:books/Screens/about_us.dart';
+import 'package:books/Screens/auth/onboarding.dart';
 import 'package:books/styling.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         debugShowCheckedModeBanner: false,
-        home: const ContactUs(),
+        home: const OnBoarding(),
       ),
     );
   }

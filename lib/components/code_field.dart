@@ -51,6 +51,8 @@ class DigitHolder extends StatelessWidget {
         onChanged: (value) {
           if (value.isNotEmpty) {
             FocusScope.of(context).nextFocus();
+          } else {
+            FocusScope.of(context).previousFocus();
           }
         },
         textInputAction: TextInputAction.next,

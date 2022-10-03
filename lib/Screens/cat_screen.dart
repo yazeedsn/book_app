@@ -16,10 +16,8 @@ class CatScreen extends StatelessWidget {
           children: [
             Text(
               'التصنيفات',
-              style: TextStyle(
-                color: const Color(0xFF434343),
-                fontSize: 30.sp,
-              ),
+              style:
+                  pageTitleTextStyle.copyWith(color: const Color(0xFF434343)),
             ),
             SizedBox(height: 70.h),
             Expanded(

@@ -1,5 +1,7 @@
+import 'package:books/Screens/cart_screen.dart';
 import 'package:books/Screens/cat_screen.dart';
 import 'package:books/Screens/featured_screen.dart';
+import 'package:books/Screens/orders_screen.dart';
 import 'package:books/fast_navigation.dart';
 import 'package:books/styling.dart';
 import 'package:flutter/material.dart';
@@ -69,40 +71,46 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 18.h),
-              Row(
-                children: [
-                  Icon(
-                    Icons.add_shopping_cart_rounded,
-                    color: const Color(0xFF141315),
-                    size: 28.r,
-                  ),
-                  SizedBox(width: 24.w),
-                  Text(
-                    'السلة',
-                    style: TextStyle(
+              GestureDetector(
+                onTap: (() => navigate(context, const CartScreen())),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.add_shopping_cart_rounded,
                       color: const Color(0xFF141315),
-                      fontSize: 15.sp,
+                      size: 28.r,
                     ),
-                  ),
-                ],
+                    SizedBox(width: 24.w),
+                    Text(
+                      'السلة',
+                      style: TextStyle(
+                        color: const Color(0xFF141315),
+                        fontSize: 15.sp,
+                      ),
+                    ),
+                  ],
+                ),
               ),
               SizedBox(height: 18.h),
-              Row(
-                children: [
-                  Icon(
-                    Icons.text_snippet,
-                    color: const Color(0xFF141315),
-                    size: 28.r,
-                  ),
-                  SizedBox(width: 24.w),
-                  Text(
-                    'طلباتي',
-                    style: TextStyle(
+              GestureDetector(
+                onTap: (() => navigate(context, const OrderScreen())),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.text_snippet,
                       color: const Color(0xFF141315),
-                      fontSize: 15.sp,
+                      size: 28.r,
                     ),
-                  ),
-                ],
+                    SizedBox(width: 24.w),
+                    Text(
+                      'طلباتي',
+                      style: TextStyle(
+                        color: const Color(0xFF141315),
+                        fontSize: 15.sp,
+                      ),
+                    ),
+                  ],
+                ),
               ),
               SizedBox(height: 18.h),
               Row(
